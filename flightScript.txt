@@ -1,0 +1,13 @@
+CREATE TABLE flight (
+    flight_id integer primary key,
+    flight_number vrchar2(10),
+    dept_port varchar2(10),
+	arrv_port varchar2(10),
+	dept_time timestamp,
+    arrv_time timestamp
+ );
+ 
+  insert into flight( flight_number, dept_port, arrv_port, dept_time, arrv_time) values('QF400', 'MEL', 'SYD', TO_TIMESTAMP('2020-06-10 09:00:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'),TO_TIMESTAMP('2020-06-10 10:25:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'));
+  insert into flight( flight_number, dept_port, arrv_port, dept_time, arrv_time) values('EK400', 'MEL', 'SYD', TO_TIMESTAMP('2020-06-10 11:00:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'),TO_TIMESTAMP('2020-06-10 12:50:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'));
+  insert into flight( flight_number, dept_port, arrv_port, dept_time, arrv_time) values('CX400', 'MEL', 'SYD', TO_TIMESTAMP('2020-06-10 02:00:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'),TO_TIMESTAMP('2020-06-10 03:20:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'));
+  insert into flight( flight_number, dept_port, arrv_port, dept_time, arrv_time) values('QF300', 'MEL', 'SYD', TO_TIMESTAMP('2020-06-10 06:00:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'),TO_TIMESTAMP('2020-06-10 08:25:23.742000000', 'YYYY-MM-DD HH24:MI:SS.FF'));
